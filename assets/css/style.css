@@ -58,4 +58,5 @@
 body {
   font-family: var(--ff-base);
   color: var(--clr-neutral-900);
+  max-width: 1920px;
 }
