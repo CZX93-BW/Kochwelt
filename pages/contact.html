@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="/assets/css/css-reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/components.js"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h1>Kontakt</h1>
+
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required />
+            
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Senden</button>
+        </form>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+</body>
+</html>
