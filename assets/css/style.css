@@ -69,86 +69,167 @@ body {
 /*Farbverlauf*/
 
 .gradient-divider {
-position: absolute;
-height: 6px;
- width:100vw;
- z-index: 0;
+  position: absolute;
+  height: 6px;
+  width: 100vw;
+  z-index: 0;
   background: linear-gradient(
     to top,
     transparent,
     #cdcdcd,
-    #DCDCDC,
+    #dcdcdc,
     transparent
-   
   );
- 
 }
 
 /* Headersection allgemin */
 header {
-    padding: 15px 160px;
-    font-size:20px;
-    width:100vw;
-
+  padding: 15px 160px;
+  font-size: 20px;
+  width: 100vw;
 }
 
 /* allgemein navigation-pagetop section */
 .navigation-pagetop ul {
-    display: flex;          
-    align-items: center;  
-    list-style: none;      
-    margin: 0;
-    padding: 0;
-   
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Verteilung Logo und Elemente oben */
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 0px;          
-    margin-right: auto;  
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin-right: auto;
 }
 
 /*Logo*/
 .navigation-pagetop img {
-    height: 50px;  
-    margin-bottom: 0px;    
+  height: 50px;
+  margin-bottom: 0px;
 }
 
 /*Kochwelt*/
 .logo span {
-    font-size: 25px;
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-style: normal;
-    position:relative;
-    top: 0px;
-    left: 0px;
-    margin-bottom: 0px;
-
+  font-size: 25px;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin-bottom: 0px;
 }
 
 /* Links einzelne Bestandteile*/
 .navigation-pagetop li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Schrift Links*/
 .navigation-pagetop a {
-    text-decoration: none;  
-    color:#403B3B;;          
-    font-size: 16px;
-    font-weight: 600;
-    margin-left: 30px;
-    margin-top: 35px;
-   
+  text-decoration: none;
+  color: #403b3b;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-top: 35px;
 }
-
 
 /*Schrift beim Hovern*/
 .navigation-pagetop a:hover {
-    color: #018001;        
+  color: #018001;
+}
+
+/* =========================
+   Main Layout
+========================= */
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 160px;
+  padding-right: 160px;
+  max-width: 1920px;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+/* Highlight - Section*/
+
+.section__highlight-recipe {
+  padding-top: 160px;
+
+  display: flex;
+
+  gap: 24px;
+}
+.section__highlight-recipe img {
+  height: 250px;
+  width: auto;
+
+  border-radius: 0.5rem;
+
+  object-fit: cover;
+}
+
+.highlight-recipe {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+/* Recipe Gallery - Section*/
+
+.section__recipe-gallery {
+  padding-top: 160px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-gallery__wrapper {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.recipe-gallery__item {
+}
+
+.recipe-gallery__item img {
+  height: 200px;
+  width: 200px;
+
+  border-radius: 0.5rem;
+
+  object-fit: cover;
+}
+
+/* Additional Info - Section*/
+
+.section__additional-info {
+  padding-top: 160px;
+}
+
+.additional-info__content {
+  display: flex;
+
+  gap: 24px;
+}
+
+.additional-info__content img {
+  height: 200px;
+  width: 200px;
+
+  border-radius: 0.5rem;
+
+  object-fit: cover;
 }
