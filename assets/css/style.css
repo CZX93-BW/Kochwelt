@@ -198,7 +198,7 @@ footer ul {
 
 /* a Styles*/
 
-a {
+footer a {
   display: inline-flex;
   align-items: center;
   background: var(--clr-primary-400);
@@ -210,7 +210,7 @@ a {
   backdrop-filter: blur(20px);
 }
 
-a:hover {
+footer a:hover {
   transform: translate3d(-10px, -10px, -15px);
   box-shadow:
     0 20px 20px rgba(0, 0, 0, 0.3),
@@ -225,7 +225,7 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-a svg {
+footer a svg {
   height: 24px;
   width: auto;
   fill: #ffffff;
