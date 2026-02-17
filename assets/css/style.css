@@ -3,12 +3,12 @@
   --clr-primary-400: hsl(120, 100%, 25%); /* Dein Basis-Grün */
   --clr-primary-200: hsl(120, 70%, 65%); /* Heller für Hover/Interaktion */
 
-  --clr-neutral-200: hsl(120, 10%, 90%); /* Sehr helles Grau */
-  --clr-neutral-500: hsl(120, 8%, 50%); /* Mittleres Grau */
-  --clr-neutral-600: hsl(120, 8%, 35%); /* Dunkleres Grau */
-  --clr-neutral-700: hsl(120, 10%, 25%);
-  --clr-neutral-800: hsl(120, 12%, 15%);
-  --clr-neutral-900: hsl(120, 15%, 5%); /* Fast Schwarz */
+  --clr-neutral-200: hsl(0, 0%, 90%); /* Sehr helles Grau */
+  --clr-neutral-500: hsl(0, 0%, 50%); /* Mittleres Grau */
+  --clr-neutral-600: hsl(0, 0%, 35%); /* Dunkleres Grau */
+  --clr-neutral-700: hsl(0, 0%, 25%);
+  --clr-neutral-800: hsl(0, 0%, 15%);
+  --clr-neutral-900: hsl(0, 0%, 5%); /* Fast Schwarz */
 
   /* --- Typo --- */
   --ff-base: "Raleway", sans-serif;
