@@ -63,7 +63,9 @@ body {
   font-family: var(--ff-base);
   color: var(--clr-neutral-900);
   font-size: var(--fs-base);
-  max-width: 1920px;
+
+  padding: 0;
+  margin: 0;
 }
 
 /*Farbverlauf*/
@@ -71,7 +73,7 @@ body {
 .gradient-divider {
   position: absolute;
   height: 6px;
-  width: 100vw;
+  width: 100%;
   z-index: 0;
   background: linear-gradient(
     to top,
@@ -86,7 +88,7 @@ body {
 header {
   padding: 15px 160px;
   font-size: 20px;
-  width: 100vw;
+  width: 100%;
 }
 
 /* allgemein navigation-pagetop section */
@@ -102,7 +104,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 0px;
+  gap: 16px;
   margin-right: auto;
 }
 
@@ -149,31 +151,24 @@ header {
 /* =========================
    Main Layout
 ========================= */
-.main__wrapper {
-  display: flex;
-  flex-direction: column;
-
-  padding-left: 160px;
-  padding-right: 160px;
-  max-width: 1920px;
-  width: 100%;
-
-  margin: 0 auto;
-}
-
 /* Highlight - Section*/
 
 .section__highlight-recipe {
-  padding-top: 160px;
+  padding: 80px 160px 80px 160px;
 
   display: flex;
-
+  justify-content: center;
+  align-items: flex-start;
   gap: 24px;
+
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
 }
+
 .section__highlight-recipe img {
   height: 250px;
   width: auto;
-
   border-radius: 0.5rem;
 
   object-fit: cover;
@@ -186,18 +181,38 @@ header {
   justify-content: space-between;
 }
 
+.highlight-recipe__btn {
+  width: 400px;
+}
+
 /* Recipe Gallery - Section*/
 
 .section__recipe-gallery {
-  padding-top: 160px;
+  padding: 80px 160px 80px 160px;
 
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+
+  background-color: var(--clr-neutral-200);
+}
+
+.recipe-gallery__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+
+  text-align: center;
 }
 
 .recipe-gallery__wrapper {
   display: flex;
-
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -216,13 +231,20 @@ header {
 /* Additional Info - Section*/
 
 .section__additional-info {
-  padding-top: 160px;
+  padding: 80px 160px 80px 160px;
+  text-align: center;
 }
 
 .additional-info__content {
   display: flex;
 
   gap: 24px;
+
+  max-width: 1920px;
+  width: auto;
+  margin: 0 auto;
+
+  text-align: left;
 }
 
 .additional-info__content img {
