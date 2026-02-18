@@ -311,3 +311,25 @@ footer a svg {
   fill: #ffffff;
   flex-shrink: 0;
 }
+
+/* =========================
+   Kontaktseite Layout
+========================= */
+
+main {
+  padding: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 400px;
+  border: 8px solid var(--clr-neutral-200);
+  border-radius: 10px;
+  padding: 24px;
+}
