@@ -265,16 +265,15 @@ footer {
   align-items: center;
   flex-direction: row;
   gap: 16px;
-  padding: 0 160px;
   background-color: #3b3b3b;
   height: 120px;
-  width: auto;
+  width: 100%;
+
 }
 
-footer img {
+.footer-logo {
   height: 80px;
-  justify-content: flex-start;
-  padding: 0;
+  margin-left: 160px;
 }
 
 footer ul {
@@ -290,6 +289,7 @@ footer ul {
   display: inline-flex;
   gap: 16px;
   align-items: center;
+  padding: 0 160px;
 }
 
 .footer-links-group {
@@ -341,7 +341,7 @@ footer a:hover {
   transition: all 0.3s ease;
 }
 
-footer a svg {
+footer a img {
   height: 24px;
   width: auto;
   fill: #ffffff;
