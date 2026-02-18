@@ -67,27 +67,22 @@ body {
   width: 100%;
 }
 
-/*Farbverlauf*/
-
-.gradient-divider {
-  position: absolute;
-  height: 6px;
-  width: 100%;
-  z-index: 0;
-  background: linear-gradient(
-    to top,
-    transparent,
-    #cdcdcd,
-    #dcdcdc,
-    transparent
-  );
-}
 
 /* Headersection allgemin */
 header {
   padding: 15px 160px;
   font-size: 20px;
   width: 100%;
+  box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.24);
+}
+
+
+.underline:hover{
+ text-decoration:underline var(--clr-primary-400) 5px;
+ text-underline-offset: 10px;
+
 }
 
 /* allgemein navigation-pagetop section */
