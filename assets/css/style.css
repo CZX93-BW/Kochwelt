@@ -25,23 +25,23 @@
 
 /* Regular */
 @font-face {
-  font-family: var(--ff-base);
+  font-family: "Raleway";
   src: url("assets/font/Raleway-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
-/* Bold */
+/* Bold - Pfad korrigiert von asset/ zu assets/ */
 @font-face {
-  font-family: var(--ff-base);
-  src: url("asset/font/Raleway-Bold.ttf") format("truetype");
+  font-family: "Raleway";
+  src: url("assets/font/Raleway-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 /* Italic */
 @font-face {
-  font-family: var(--ff-base);
+  font-family: "Raleway";
   src: url("assets/font/Raleway-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
@@ -49,7 +49,7 @@
 
 /* Bold Italic */
 @font-face {
-  font-family: var(--ff-base);
+  font-family: "Raleway";
   src: url("assets/font/Raleway-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
@@ -63,9 +63,8 @@ body {
   font-family: var(--ff-base);
   color: var(--clr-neutral-900);
   font-size: var(--fs-base);
-
-  padding: 0;
-  margin: 0;
+  max-width: 1920px;
+  font-variant-numeric: oldstyle-nums;
 }
 
 /*Farbverlauf*/
@@ -216,8 +215,8 @@ header {
   justify-content: space-between;
 }
 
-.recipe-gallery__item {
-}
+/*.recipe-gallery__item {
+}*/
 
 .recipe-gallery__item img {
   height: 200px;
@@ -331,4 +330,26 @@ footer a svg {
   width: auto;
   fill: #ffffff;
   flex-shrink: 0;
+}
+
+/* =========================
+   Kontaktseite Layout
+========================= */
+
+main {
+  padding: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 400px;
+  border: 8px solid var(--clr-neutral-200);
+  border-radius: 10px;
+  padding: 24px;
 }
