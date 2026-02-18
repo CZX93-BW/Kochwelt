@@ -336,7 +336,7 @@ footer a svg {
    Kontaktseite Layout
 ========================= */
 
-main {
+.contact-container {
   padding: 160px;
   display: flex;
   flex-direction: column;
