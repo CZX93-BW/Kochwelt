@@ -256,19 +256,25 @@ header {
 }
 
 /* =========================
-   FOOTRER LAYOUT
+   FOOTER LAYOUT
 ========================= */
 
 footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row-reverse;
+  flex-direction: row;
   gap: 16px;
-  padding-right: 160px;
-  background-color: var(--clr-neutral-500);
+  padding: 0 160px;
+  background-color: #3b3b3b;
   height: 120px;
   width: auto;
+}
+
+footer img {
+  height: 80px;
+  justify-content: flex-start;
+  padding: 0;
 }
 
 footer ul {
@@ -284,6 +290,16 @@ footer ul {
   display: inline-flex;
   gap: 16px;
   align-items: center;
+}
+
+.footer-links-group {
+  margin-left: auto;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .footer-links a {
