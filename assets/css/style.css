@@ -3,6 +3,8 @@
   --clr-primary-400: hsl(120, 100%, 25%); /* Dein Basis-Grün */
   --clr-primary-200: hsl(120, 70%, 65%); /* Heller für Hover/Interaktion */
 
+  --clr-neutral: #ffff;
+
   --clr-neutral-200: hsl(0, 0%, 90%); /* Sehr helles Grau */
   --clr-neutral-500: hsl(0, 0%, 50%); /* Mittleres Grau */
   --clr-neutral-600: hsl(0, 0%, 35%); /* Dunkleres Grau */
@@ -75,9 +77,23 @@ header {
   box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.24);
   -webkit-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.24);
+
+  height: 150px;
+}
+
+.burgerBTN {
+  display: none;
+}
+
+.burgerLine {
+  display: none;
 }
 
 .navigation__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
@@ -89,26 +105,23 @@ header {
 }
 
 /* allgemein navigation-pagetop section */
-.navigation-pagetop ul {
+
+.navigation-pagetop {
   display: flex;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  gap: 16px;
+
+  height: 120px;
+  align-items: flex-end;
 }
 
 /* Verteilung Logo und Elemente oben */
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-right: auto;
 }
 
 /*Logo*/
 .navigation-pagetop img {
   height: 50px;
-  margin-bottom: 0px;
+  width: auto;
 }
 
 /*Kochwelt*/
@@ -136,8 +149,6 @@ header {
   color: #403b3b;
   font-size: 16px;
   font-weight: 600;
-  margin-left: 30px;
-  margin-top: 35px;
 }
 
 /*Schrift beim Hovern*/
@@ -375,4 +386,49 @@ footer a img {
   border: 8px solid var(--clr-neutral-200);
   border-radius: 10px;
   padding: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+  .burgerBTN {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: none;
+    cursor: pointer;
+    z-index: 101;
+  }
+
+  .burgerLine {
+    display: block;
+    height: 3px;
+    background-color: var(--clr-neutral-900);
+    width: 30px;
+    border-radius: 2px;
+  }
+
+  .navigation-pagetop {
+    display: none;
+
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    background-color: var(--clr-neutral);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100vh - 150px);
+    padding-top: 40px;
+    border-top: 1px solid var(--clr-neutral-200);
+  }
+
+  .navigation-pagetop.show {
+    display: flex;
+  }
+
+  .nav__link {
+    font-size: var(--fs-lg);
+    padding: 16px;
+  }
 }

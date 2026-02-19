@@ -1,16 +1,31 @@
 <header>
   <div class="navigation__wrapper">
+    <img src="../assets/img/logo.png" alt="Logo" />
+    <button class="burgerBTN" onclick="toggleMenu()">
+      <span class="burgerLine"></span>
+      <span class="burgerLine"></span>
+      <span class="burgerLine"></span>
+    </button>
     <nav class="navigation-pagetop">
-      <ul>
-        <li class="logo">
-          <img src="../assets/img/logo.png" alt="Logo" />
-        </li>
+      <a onclick="toggleMenu()" class="underline nav__link" href="/index.html"
+        >Start</a
+      >
 
-        <li><a class="underline" href="/index.html">Start</a></li>
-        <li><a class="underline" href="#">Rezept des Tages</a></li>
-        <li><a class="underline" href="/pages/contact.html">Kontakt</a></li>
-        <li><a class="underline" href="/pages/impressum.html">Impressum</a></li>
-      </ul>
+      <a onclick="toggleMenu()" class="underline nav__link" href="#"
+        >Rezept des Tages</a
+      >
+
+      <a
+        onclick="toggleMenu()"
+        class="underline nav__link"
+        href="/pages/contact.html"
+        >Kontakt</a
+      >
+
+      <a onclick="toggleMenu()" class="underline" href="/pages/impressum.html"
+        >Impressum</a
+      >
     </nav>
   </div>
 </header>
+<script defer src="../assets/js/script.js"></script>
