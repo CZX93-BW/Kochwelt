@@ -801,6 +801,20 @@ address {
     width: 100%;
     height: auto;
   }
+
+  .additional-info__content {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    text-align: justify;
+  }
+  .section__additional-info h2 {
+    text-align: center;
+  }
+  .additional-info__content img {
+    width: 500px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -884,15 +898,8 @@ address {
 }
 
 @media screen and (max-width: 1000px) {
-  .additional-info__content {
-    flex-direction: column-reverse;
-    align-items: center;
-
-    text-align: center;
-  }
-
   .additional-info__content img {
-    width: 350px;
+    max-width: 100%;
     height: auto;
   }
 
