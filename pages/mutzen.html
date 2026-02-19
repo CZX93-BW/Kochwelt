@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutzen</title>
+    <link rel="stylesheet" href="../assets/css/css-reset.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script defer src="../assets/js/components.js"></script>
+  </head>
+  <body>
+    <div data-include="../components/header.html"></div>
+    <main class="content-wrapper">
+      <section class="hero__section">
+        <h1>Mutzen</h1>
+        <img
+          src="../assets/img/mutzen.png"
+          alt="Bild einer leckeren, fertig zubereiteten Mutzen"
+          class="recipe__img"
+        />
+        <div class="tag__wrapper">
+          <span><img src="../assets/img/icons/clock-regular.svg" alt="" />25 Min</span>
+
+          <span><img src="../assets/img/icons/brain-solid.svg" alt="" />Simpel</span>
+
+          <span>
+            <img src="../assets/img/icons/calendar-alt-regular.svg" alt="" />18.02.26
+          </span>
+        </div>
+      </section>
+      <section class="calculator__section">
+        <div class="calculator-input">
+          <p>Zutaten für:</p>
+          <form>
+            <input min="1" value="2"
+              type="number"
+              placeholder="Anzahl der Portionen"
+              alt="Inputfeld zur Newsletteranmeldung"
+            />
+            <a class="calculator__submit__btn" href="#"> Portionen </a>
+          </form>
+        </div>
+        <table>
+          <tr>
+            <td>250 g</td>
+            <td>Magerquark</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Eier</td>
+          </tr>
+          <tr>
+            <td>1 Tasse</td>
+            <td>Zucker</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Rosinen</td>
+          </tr>
+          <tr>
+            <td>300 g</td>
+            <td>Mehl</td>
+          </tr>
+          <tr>
+            <td>2 pac.</td>
+            <td>Vanille Zucker</td>
+          </tr>
+          <tr>
+            <td>1 l</td>
+            <td>Öl zum Frittieren</td>
+          </tr>
+        </table>
+      </section>
+      <section class="preparation__section">
+        <h2>Zubereitung</h2>
+        <div class="tag__wrapper">
+          <span
+            ><img src="../assets/img/icons/clock-regular.svg" alt="" />ca. 25
+            Minuten</span
+          >
+        </div>
+        <p>
+          Alle Zutaten bis auf die Rosinen in den Mixtopf geschlossen geben, 50
+          sec. Modus „Teig kneten“ verrühren. Öl auf dem Herd erhitzen. Mit zwei
+          Tl. gebe ich den Teig ins Öl. Ich backe immer die erste Hälfte ohne
+          Rosinen und unter den Rest Teig mische ich sie. Wenn die Mutzen oben
+          im Topf schwimmen und eine goldgelbe Farbe haben sind sie fertig.
+        </p>
+        <p>Guten Appetit!</p>
+      </section>
+      <address>
+        <h3>Rezept erstellt von:</h3>
+        <span class="author"
+          ><img
+            class="author__img"
+            src="../assets/img/profillogo.png"
+            alt="Profilbild des Autors"
+          />Reini</span
+        >
+      </address>
+    </main>
+    <div data-include="../components/footer.html"></div>
+  </body>
+</html>
