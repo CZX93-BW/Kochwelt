@@ -962,6 +962,22 @@ address {
     height: 80px;
   }
 
+  .navigation-pagetop {
+    display: none;
+
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: var(--clr-neutral);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100vh - 80px);
+    padding-top: 40px;
+    border-top: 1px solid var(--clr-neutral-200);
+  }
+
   .navigation__wrapper {
     height: 80px;
   }
