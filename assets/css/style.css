@@ -67,7 +67,6 @@ body {
   width: 100%;
 }
 
-
 /* Headersection allgemin */
 header {
   padding: 15px 160px;
@@ -78,11 +77,15 @@ header {
   -moz-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.24);
 }
 
+.navigation__wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
 
-.underline:hover{
- text-decoration:underline var(--clr-primary-400) 5px;
- text-underline-offset: 10px;
-
+.underline:hover {
+  text-decoration: underline var(--clr-primary-400) 5px;
+  text-underline-offset: 10px;
 }
 
 /* allgemein navigation-pagetop section */
@@ -155,7 +158,7 @@ header {
   align-items: flex-start;
   gap: 24px;
 
-  max-width: 1920px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
 }
@@ -197,7 +200,7 @@ header {
   flex-direction: column;
   justify-content: center;
 
-  max-width: 1920px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
 
@@ -234,7 +237,7 @@ header {
 
   gap: 24px;
 
-  max-width: 1920px;
+  max-width: 1440px;
   width: auto;
   margin: 0 auto;
 
@@ -255,20 +258,30 @@ header {
 ========================= */
 
 footer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  gap: 16px;
   background-color: #3b3b3b;
   height: 120px;
   width: 100%;
 
+  padding-left: 160px;
+  padding-right: 160px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+
+  max-width: 1440px;
+  width: 100%;
 }
 
 .footer-logo {
   height: 80px;
-  margin-left: 160px;
 }
 
 footer ul {
@@ -283,8 +296,7 @@ footer ul {
 .social-icons {
   display: inline-flex;
   gap: 16px;
-  align-items: center;
-  padding: 0 160px;
+  align-items: flex-end;
 }
 
 .footer-links-group {
