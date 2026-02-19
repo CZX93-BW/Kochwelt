@@ -255,6 +255,11 @@ header {
   text-align: justify;
 }
 
+.section__additional-info h2 {
+  padding: 80px 160px 80px 160px;
+  text-align: center;
+}
+
 .additional-info__content {
   display: flex;
 
