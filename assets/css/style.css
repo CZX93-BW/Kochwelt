@@ -900,6 +900,8 @@ address {
   .navigation-pagetop {
     display: none;
 
+    z-index: 999;
+
     position: absolute;
     top: 110px;
     left: 0;
