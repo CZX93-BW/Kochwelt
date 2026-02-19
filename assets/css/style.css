@@ -450,7 +450,9 @@ footer a img {
   font-family: var(--ff-base);
   background: var(--clr-neutral);
   color: var(--clr-neutral-800);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 /* Focus State (Primary Color) */
@@ -473,7 +475,10 @@ footer a img {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 /* Hover */
@@ -499,7 +504,6 @@ footer a img {
     font-size: var(--fs-lg);
   }
 }
-
 
 /* =========================
    Datenschutz LAYOUT
@@ -815,6 +819,51 @@ address {
   }
 }
 
+@media screen and (max-width: 1150px) {
+  .burgerBTN {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: none;
+    cursor: pointer;
+    z-index: 101;
+  }
+
+  .burgerLine {
+    display: block;
+    height: 3px;
+    background-color: var(--clr-neutral-900);
+    width: 30px;
+    border-radius: 2px;
+  }
+
+  .navigation-pagetop {
+    display: none;
+
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    background-color: var(--clr-neutral);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: calc(100vh - 110px);
+    padding-top: 40px;
+    border-top: 1px solid var(--clr-neutral-200);
+  }
+
+  .navigation-pagetop.show {
+    display: flex;
+  }
+
+  .nav__link {
+    font-size: var(--fs-lg);
+    padding: 16px;
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .recipe-gallery__wrapper {
     flex-direction: column;
@@ -851,49 +900,6 @@ address {
   .section__footer {
     flex-direction: column-reverse;
     gap: 50px;
-  }
-
-  .burgerBTN {
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    border: none;
-    cursor: pointer;
-    z-index: 101;
-  }
-
-  .burgerLine {
-    display: block;
-    height: 3px;
-    background-color: var(--clr-neutral-900);
-    width: 30px;
-    border-radius: 2px;
-  }
-
-  .navigation {
-    display: none;
-
-    position: absolute;
-    top: 110px;
-    left: 0;
-    right: 0;
-    background-color: var(--clr-neutral);
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: calc(100vh - 110px);
-    padding-top: 40px;
-    border-top: 1px solid var(--clr-neutral-200);
-  }
-
-  .navigation.show {
-    display: flex;
-  }
-
-  .nav__link {
-    font-size: var(--fs-lg);
-    padding: 16px;
   }
 }
 
