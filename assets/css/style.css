@@ -383,66 +383,250 @@ footer a img {
    Kontaktseite Layout
 ========================= */
 
-.contact-container {
-  padding: 160px;
+/* Wrapper */
+.contact-wrapper {
+  background: var(--clr-neutral-200);
+  padding: 60px 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
+  justify-content: center;
+  font-family: var(--ff-base);
 }
+
+/* Card */
+.contact-card {
+  background: var(--clr-neutral);
+  max-width: 700px;
+  width: 100%;
+  padding: 40px;
+  border: 1px solid var(--clr-neutral-200);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  color: var(--clr-neutral-800);
+}
+
+/* Headings */
+.contact-card h1 {
+  margin-top: 0;
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--clr-neutral-900);
+}
+
+.contact-intro {
+  font-size: var(--fs-base);
+  color: var(--clr-neutral-600);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Form Layout */
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  max-width: 400px;
-  border: 8px solid var(--clr-neutral-200);
-  border-radius: 10px;
-  padding: 24px;
+  gap: 22px;
 }
 
-@media screen and (max-width: 1200px) {
-  .burgerBTN {
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    border: none;
-    cursor: pointer;
-    z-index: 101;
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.contact-form label {
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--clr-neutral-700);
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--clr-neutral-200);
+  font-size: var(--fs-base);
+  font-family: var(--ff-base);
+  background: var(--clr-neutral);
+  color: var(--clr-neutral-800);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus State (Primary Color) */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--clr-primary-400);
+  box-shadow: 0 0 0 3px hsla(120, 100%, 25%, 0.1);
+}
+
+/* Button */
+.contact-button {
+  margin-top: 10px;
+  padding: 14px;
+  font-size: var(--fs-md);
+  font-weight: 700;
+  font-family: var(--ff-base);
+  color: #fff;
+  background: var(--clr-primary-400);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Hover */
+.contact-button:hover {
+  background: var(--clr-primary-200);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Active */
+.contact-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 25px;
   }
 
-  .burgerLine {
-    display: block;
-    height: 3px;
-    background-color: var(--clr-neutral-900);
-    width: 30px;
-    border-radius: 2px;
-  }
-
-  .navigation-pagetop {
-    display: none;
-
-    position: absolute;
-    top: 150px;
-    left: 0;
-    right: 0;
-    background-color: var(--clr-neutral);
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: calc(100vh - 150px);
-    padding-top: 40px;
-    border-top: 1px solid var(--clr-neutral-200);
-  }
-
-  .navigation-pagetop.show {
-    display: flex;
-  }
-
-  .nav__link {
+  .contact-card h1 {
     font-size: var(--fs-lg);
-    padding: 16px;
+  }
+}
+
+
+/* =========================
+   Datenschutz LAYOUT
+========================= */
+
+/* Wrapper */
+.privacy-wrapper {
+  background: #f7f7f8;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card */
+.privacy-card {
+  background: #ffffff;
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Typography */
+.privacy-card h1 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.privacy-card h2 {
+  margin-top: 32px;
+  font-size: 22px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 6px;
+}
+
+.privacy-card h3 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.privacy-card p {
+  margin: 10px 0;
+}
+
+/* Source */
+.privacy-source {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .privacy-card {
+    padding: 25px;
+  }
+}
+
+/* =========================
+   Impressum LAYOUT
+========================= */
+
+/* Wrapper */
+.imprint-wrapper {
+  background: #f7f7f8;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card */
+.imprint-card {
+  background: #ffffff;
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Typography */
+.imprint-card h1 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.imprint-card h2 {
+  margin-top: 28px;
+  font-size: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 6px;
+}
+
+.imprint-card p {
+  margin: 10px 0;
+}
+
+/* Links */
+.imprint-card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.imprint-card a:hover {
+  text-decoration: underline;
+}
+
+/* Source */
+.imprint-source {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .imprint-card {
+    padding: 25px;
   }
 }
 
