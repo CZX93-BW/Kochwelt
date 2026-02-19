@@ -252,7 +252,7 @@ header {
 
 .section__additional-info {
   padding: 80px 160px 80px 160px;
-  text-align: center;
+  text-align: justify;
 }
 
 .additional-info__content {
@@ -265,12 +265,12 @@ header {
   width: auto;
   margin: 0 auto;
 
-  text-align: left;
+  text-align: justify;
 }
 
 .additional-info__content img {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 
   border-radius: 0.5rem;
 
