@@ -820,6 +820,12 @@ address {
 }
 
 @media screen and (max-width: 1150px) {
+  header {
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+  }
+
   .burgerBTN {
     background-color: transparent;
     display: flex;
@@ -904,12 +910,6 @@ address {
 }
 
 @media screen and (max-width: 800px) {
-  header {
-    display: flex;
-    align-items: center;
-    padding: 0 40px;
-  }
-
   .section__highlight-recipe {
     padding: 80px 40px;
   }
