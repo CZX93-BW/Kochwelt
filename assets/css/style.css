@@ -166,9 +166,12 @@ header {
 
 .section__highlight-recipe {
   padding: 80px 160px 80px 160px;
+  width: 100%;
+}
 
+.highlight-recipe__wrapper {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 24px;
 
   max-width: 1440px;
@@ -180,9 +183,7 @@ header {
   height: 300px;
   width: 500px;
   border-radius: 0.5rem;
-
   flex-shrink: 0;
-
   object-fit: cover;
   object-position: center;
 }
@@ -190,8 +191,8 @@ header {
 .highlight-recipe {
   display: flex;
   flex-direction: column;
-
   justify-content: space-between;
+
   flex: 1;
   width: 100%;
 }
