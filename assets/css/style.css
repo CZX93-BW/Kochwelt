@@ -634,6 +634,9 @@ footer img {
   padding: 40px 20px;
   display: flex;
   justify-content: center;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /* Card */
@@ -687,6 +690,11 @@ footer img {
   .imprint-card {
     padding: 25px;
   }
+}
+
+.main-imprint {
+  display: flex;
+  justify-content: center;
 }
 
 /* MUSS NOCH ABGEARBETIET WERDEN */
