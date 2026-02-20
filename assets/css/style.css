@@ -288,7 +288,7 @@ header {
 .additional-info__content {
   display: flex;
 
-  gap: 24px;
+  gap: 80px;
   padding-top: 40px;
 
   max-width: 1440px;
@@ -1094,10 +1094,8 @@ address {
     padding: 80px 40px;
   }
 
-    .footer__wrapper {
+  .footer__wrapper {
     width: 100%;
- 
-    
   }
 
   footer {
@@ -1160,8 +1158,6 @@ address {
 
   .footer__wrapper {
     width: 100%;
- 
-    
   }
 
   footer {
