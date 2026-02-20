@@ -70,7 +70,7 @@ Da dieses Projekt auf reinem HTML, CSS und JavaScript basiert, ist kein aufwendi
 
 1. **Repository klonen:**
    ```bash
-   git clone [https://github.com/CZX93-BW/Kochwelt.git](https://github.com/CZX93-BW/Kochwelt.git)
+   git clone https://github.com/CZX93-BW/Kochwelt.git
    ```
 2. **In den Projektordner navigieren:**
    ```bash
