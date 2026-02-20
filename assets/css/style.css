@@ -419,7 +419,7 @@ footer a {
 }
 
 footer a:hover {
-  transform: translate3d(-10px, -10px, -15px);
+  transform: translate3d(-5px, -5px, -5px);
   box-shadow:
     0 20px 20px rgba(0, 0, 0, 0.3),
     0 0 15px rgba(255, 255, 255, 0.2);
