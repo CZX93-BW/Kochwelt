@@ -60,7 +60,6 @@
 /* =========================
    GLOBAL LAYOUT
 ========================= */
-
 body {
   font-family: var(--ff-base);
   color: var(--clr-neutral-900);
@@ -71,6 +70,10 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 /* Headersection allgemin */
@@ -165,7 +168,6 @@ header {
   padding: 80px 160px 80px 160px;
 
   display: flex;
-  justify-content: center;
   align-items: flex-start;
   gap: 24px;
 
@@ -188,6 +190,7 @@ header {
   flex-direction: column;
 
   justify-content: space-between;
+  flex: 1;
 }
 
 .highlight-recipe__btn {
