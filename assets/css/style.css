@@ -67,6 +67,10 @@ body {
   font-size: var(--fs-base);
   font-variant-numeric: oldstyle-nums;
   width: 100%;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Headersection allgemin */
@@ -239,7 +243,10 @@ header {
 
 .recipe-gallery__wrapper {
   display: flex;
+
   width: 100%;
+  max-width: 1440px;
+
   justify-content: space-between;
 
   padding-top: 40px;
@@ -727,7 +734,7 @@ footer img {
   background-color: var(--clr-neutral-200);
   border-radius: 0.5rem;
 
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
 }
 
 .tag__wrapper img {
@@ -1044,14 +1051,12 @@ address {
 
   .footer__wrapper {
     width: 100%;
-  
   }
 
   footer {
     height: auto;
     width: 100%;
     padding-inline: 160px 160px;
-    
 
     flex-direction: column;
   }
@@ -1060,12 +1065,10 @@ address {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
   }
 
   .social-icons a {
     font-size: 12px;
-    
   }
 
   .footer-links {
@@ -1085,15 +1088,20 @@ address {
 
 @media screen and (max-width: 800px) {
   .section__highlight-recipe {
-    padding: 80px 40px;
+    padding: 80px 20px;
   }
 
   .section__recipe-gallery {
-    padding: 80px 40px;
+    padding: 80px 20px;
   }
 
   .section__additional-info {
-    padding: 80px 40px;
+    padding: 80px 20px;
+  }
+
+  .calculator__section {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .footer__wrapper {
@@ -1150,8 +1158,16 @@ address {
     text-align: center;
     flex-direction: column;
 
+    width: 100%;
+
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+
+  .calculator-input input,
+  .calculator-input input::placeholder,
+  .calculator__submit__btn {
+    width: 100%;
   }
 
   form {
