@@ -566,6 +566,88 @@ footer img {
 }
 
 /* =========================
+   Success Seite Layout
+========================= */
+
+/* Page Layout */
+.success-page {
+  min-height: 100vh;
+  background: var(--clr-neutral-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card */
+.success-card {
+  background: var(--clr-neutral);
+  max-width: 420px;
+  width: 100%;
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-top: 6px solid var(--clr-primary-400);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+/* Visible State (Animation) */
+.success-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Icon */
+.success-icon {
+  font-size: 48px;
+  color: var(--clr-primary-400);
+  margin-bottom: 15px;
+}
+
+/* Text */
+.success-card h2 {
+  font-size: var(--fs-xl);
+  color: var(--clr-neutral-900);
+  margin-bottom: 10px;
+}
+
+.success-card p {
+  color: var(--clr-neutral-600);
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* Button */
+.success-button {
+  background: var(--clr-primary-400);
+  color: var(--clr-neutral);
+  border: none;
+  padding: 12px 20px;
+  font-size: var(--fs-base);
+  font-weight: 700;
+  font-family: var(--ff-base);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+.success-button:hover {
+  background: var(--clr-primary-200);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.success-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+
+
+/* =========================
    Datenschutz LAYOUT
 ========================= */
 
@@ -697,7 +779,9 @@ footer img {
   justify-content: center;
 }
 
-/* MUSS NOCH ABGEARBETIET WERDEN */
+/* =========================
+   Rezeptseiten LAYOUT
+========================= */
 
 .content-wrapper {
   display: flex;
