@@ -55,9 +55,9 @@ Kochwelt/
 │   ├── font/           # Lokale Schriftarten (z.B. Raleway)
 │   ├── img/            # Bilder, Logos und Icons
 │   ├── info/           # Zusätzliche Infomaterialien
-│   └── js/             # JavaScript-Logik (script.js, components.js, contact-form.js)
+│   └── js/             # JavaScript-Logik (script.js, components.js, contact-form.js, succes.js)
 ├── components/         # Modulare HTML-Bausteine (header.html, footer.html)
-├── pages/              # Alle Unterseiten (Kontakt, Impressum, Datenschutz, Rezeptseiten)
+├── pages/              # Alle Unterseiten (Kontakt, Kontaktsuccess, Impressum, Datenschutz, Rezeptseiten)
 ├── index.html          # Startseite der Anwendung
 └── README.md           # Diese Dokumentation
 ```
